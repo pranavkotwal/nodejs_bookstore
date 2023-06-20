@@ -46,14 +46,14 @@ The following endpoints are available in this API:
 
 ### Retrieve all books
 ![Screenshot 2023-06-20 at 2 30 31 PM](https://github.com/pranavkotwal/nodejs_bookstore/assets/49470242/e2850481-df28-4180-b601-43608c2dfde8)
- - **Endpoint**: GET /api/books
+ - **Endpoint**: GET /api/items
  - **Description**: Retrieves all books from the database.
  - Response: JSON array of books.
 
 ### Retrieve a specific book by ID
 ![Screenshot 2023-06-20 at 2 32 07 PM](https://github.com/pranavkotwal/nodejs_bookstore/assets/49470242/0f7dab86-1160-456f-9751-d03a3dadb5a6)
 
- - **Endpoint**: GET /api/books/:id
+ - **Endpoint**: GET /api/items/:id
  - **Description**: Retrieves a specific book by its ID.
  - **Parameters**:
    - id: The ID of the book.
@@ -65,7 +65,7 @@ The following endpoints are available in this API:
 ### Create a new book
 ![Screenshot 2023-06-20 at 2 33 10 PM](https://github.com/pranavkotwal/nodejs_bookstore/assets/49470242/8b572189-33b4-4b92-9983-12f851d665a4)
 
-- **Endpoint**: POST /api/books
+- **Endpoint**: POST /api/items
 - **Description**: Creates a new book in the database.
 - Request body: JSON object representing the new book.
 - Response: JSON object of the created book.
@@ -73,7 +73,7 @@ The following endpoints are available in this API:
 - 201: Book created successfully.
 - 500: Error creating book in the database.
 ### Update an existing book by ID
-- **Endpoint** : PUT /api/books/:id
+- **Endpoint** : PUT /api/items/:id
 - **Description**: Updates an existing book by its ID.
 - **Parameters**:
    - id: The ID of the book.
@@ -86,7 +86,7 @@ The following endpoints are available in this API:
 ## Delete a book by ID
 
 ![Screenshot 2023-06-20 at 2 34 36 PM](https://github.com/pranavkotwal/nodejs_bookstore/assets/49470242/4787391c-d78d-4fc4-b0e8-e0d9e8fa7b62)
-**Endpoint**: DELETE /api/books/:id
+**Endpoint**: DELETE /api/items/:id
 - **Description**: Deletes a book by its ID.
 - **Parameters**:
   - id: The ID of the book.
